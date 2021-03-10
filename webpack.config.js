@@ -4,6 +4,8 @@
  */
 
 module.exports = {
+  test: /\.css$/,
+  use: ['style-loader', 'css-loader'],
   resolve: {
     alias: {
       '@': require('path').resolve(__dirname, 'src'),

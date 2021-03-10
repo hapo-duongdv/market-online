@@ -9,15 +9,18 @@
     "precommit": "lint-staged"
   },
   "dependencies": {
-    "antd": "^3.19.5",
+    "@ant-design/icons": "^4.5.0",
+    "antd": "^4.13.1",
     "dva": "^2.6.0-beta.6",
     "moment": "^2.26.0",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "react-dom": "^16.8.6",
+    "styled-components": "^5.2.1"
   },
   "devDependencies": {
     "babel-eslint": "^9.0.0",
     "cross-env": "^7.0.2",
+    "css-loader": "^5.1.1",
     "eslint": "^5.4.0",
     "eslint-config-umi": "^1.4.0",
     "eslint-plugin-flowtype": "^2.50.0",
@@ -27,6 +30,7 @@
     "husky": "^0.14.3",
     "lint-staged": "^7.2.2",
     "react-test-renderer": "^16.7.0",
+    "style-loader": "^2.0.0",
     "umi": "^2.7.7",
     "umi-plugin-react": "^1.8.4"
   },

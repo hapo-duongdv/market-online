@@ -1,21 +1,24 @@
-import { Link } from 'umi';
-import { formatMessage } from 'umi-plugin-react/locale';
-import styles from './index.css';
+import React from 'react';
+import 'antd/dist/antd.css';
+import style from './index.css';
+import { Layout, Breadcrumb } from 'antd';
+import HeaderLayout from '@/components/HomePage/header';
 
-export default function () {
+export default function() {
+  const { Content, Footer } = Layout;
+
   return (
-    <div className={styles.normal}>
-      <div className={styles.welcome} />
-      <ul className={styles.list}>
-        <li>To get started, edit <code>src/pages/index.js</code> and save to reload.</li>
-        <li>
-          <a href="https://umijs.org/guide/getting-started.html">
-            { formatMessage({ id: 'home'}) }
-          </a>
-          <br />
-          <Link to='/authentication'>Go authentication page</Link>
-        </li>
-      </ul>
-    </div>
+    <Layout className="layout">
+      <HeaderLayout />
+      <Content style={{ padding: '0 50px' }}>
+        <Breadcrumb style={{ margin: '16px 0' }}>
+          <Breadcrumb.Item>Home</Breadcrumb.Item>
+          <Breadcrumb.Item>List</Breadcrumb.Item>
+          <Breadcrumb.Item>App</Breadcrumb.Item>
+        </Breadcrumb>
+        <div className={style.content}>Content</div>
+      </Content>
+      <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>
+    </Layout>
   );
 }

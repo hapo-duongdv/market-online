@@ -1,23 +1,16 @@
-
-.normal {
-  font-family: Georgia, sans-serif;
-  margin-top: 4em;
-  text-align: center;
+.content {
+  min-height: 280px;
+  padding: 24px;
+  background: #fff;
 }
-
-.welcome {
-  height: 512px;
-  background: url(../assets/yay.jpg) no-repeat center 0;
-  background-size: 512px 512px;
+.header {
+  background: rgb(255, 186, 0);
+  height: auto;
 }
-
-.list {
-  font-size: 1.2em;
-  margin: 1.8em 0 0;
-  list-style: none;
-  line-height: 1.5em;
+.ant-row-rtl .logo {
+  float: right;
+  margin: 16px 0 16px 24px;
 }
-
-.list code {
-  background: #f7f7f7;
+[data-theme='dark'] .content {
+  background: #141414;
 }
